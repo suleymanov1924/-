@@ -30,16 +30,40 @@ class LoginFormController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
-        // получаем текст логина
-        let login = loginInput.text!
-        // получаем текст пароль
-        let password = passwordInput.text!
         
-        //проверяем верны ли они
+        func shouldPerformSegue(withIdentifier: String, sender: Any?) -> Bool{
+            // Проверяем данные
+            let checkResult = checkUserData ()
+            
+            // Если данные неверны, покажем ошибку
+            if !checkResult {
+                showLoginError ()
+            }
+            
+            // Вернём результат
+            return checkResult
+        }
+        
+        func checkUserData () -> Bool {
+            let login = loginInput.text!
+            let password = passwordInput.text!
+        
         if login == "admin" && password == "123456" {
-            print("Успешная авторизация")
+            return true
         } else {
-            print("Неуспешная авторизация")
+            return false
+            }
+        }
+        
+        func showLoginError () {
+            // Создаём контроллер
+            let alter = UIAlertController (title: "Ошибка", message: "Введены неверные данные рользователя", preferredStyle: .alert)
+            //Создаём кнопку для UIAlertController
+            let action = UIAlertAction (title: "Ok", style: .cancel, handler: nil)
+            // Добавляем кнопку на UIAlertController
+            alter.addAction(action)
+            // Показываем UIAlertController
+            present (alter, animated: true, completion: nil)
         }
     }
     
