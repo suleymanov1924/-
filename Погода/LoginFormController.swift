@@ -65,6 +65,7 @@ class LoginFormController: UIViewController {
             // Показываем UIAlertController
             present (alter, animated: true, completion: nil)
         }
+        
     }
     
 // когда клавиатура появляется
@@ -107,5 +108,4 @@ class LoginFormController: UIViewController {
     @objc func hideKeyboard () {
         self.scrollView?.endEditing(true)
     }
-    
 }

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		493B87551FBCD12E00437EDC /* AllCityesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493B87541FBCD12E00437EDC /* AllCityesController.swift */; };
+		493B87571FBCD16700437EDC /* AllCityesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493B87561FBCD16700437EDC /* AllCityesCell.swift */; };
+		493B875A1FBCD7A000437EDC /* MyCityesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493B87591FBCD7A000437EDC /* MyCityesController.swift */; };
+		493B875C1FBCD7C800437EDC /* MyCityesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493B875B1FBCD7C800437EDC /* MyCityesCell.swift */; };
+		493B875F1FBCDF0200437EDC /* PogodaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493B875E1FBCDF0200437EDC /* PogodaViewController.swift */; };
+		493B87611FBCDF2300437EDC /* PogodaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493B87601FBCDF2300437EDC /* PogodaCell.swift */; };
 		499777991FB3550600621565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499777981FB3550600621565 /* AppDelegate.swift */; };
 		4997779E1FB3550600621565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4997779C1FB3550600621565 /* Main.storyboard */; };
 		499777A01FB3550600621565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4997779F1FB3550600621565 /* Assets.xcassets */; };
@@ -15,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		493B87541FBCD12E00437EDC /* AllCityesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCityesController.swift; sourceTree = "<group>"; };
+		493B87561FBCD16700437EDC /* AllCityesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCityesCell.swift; sourceTree = "<group>"; };
+		493B87591FBCD7A000437EDC /* MyCityesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCityesController.swift; sourceTree = "<group>"; };
+		493B875B1FBCD7C800437EDC /* MyCityesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCityesCell.swift; sourceTree = "<group>"; };
+		493B875E1FBCDF0200437EDC /* PogodaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PogodaViewController.swift; sourceTree = "<group>"; };
+		493B87601FBCDF2300437EDC /* PogodaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PogodaCell.swift; sourceTree = "<group>"; };
 		499777951FB3550600621565 /* Погода.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Погода.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		499777981FB3550600621565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4997779D1FB3550600621565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,6 +47,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		493B874D1FBCC78300437EDC /* AllCityes */ = {
+			isa = PBXGroup;
+			children = (
+				493B87541FBCD12E00437EDC /* AllCityesController.swift */,
+				493B87561FBCD16700437EDC /* AllCityesCell.swift */,
+			);
+			path = AllCityes;
+			sourceTree = "<group>";
+		};
+		493B87581FBCD74F00437EDC /* MyCityes */ = {
+			isa = PBXGroup;
+			children = (
+				493B87591FBCD7A000437EDC /* MyCityesController.swift */,
+				493B875B1FBCD7C800437EDC /* MyCityesCell.swift */,
+			);
+			path = MyCityes;
+			sourceTree = "<group>";
+		};
+		493B875D1FBCDEC900437EDC /* Pogoda */ = {
+			isa = PBXGroup;
+			children = (
+				493B875E1FBCDF0200437EDC /* PogodaViewController.swift */,
+				493B87601FBCDF2300437EDC /* PogodaCell.swift */,
+			);
+			path = Pogoda;
+			sourceTree = "<group>";
+		};
 		4997778C1FB3550500621565 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +93,9 @@
 		499777971FB3550600621565 /* Погода */ = {
 			isa = PBXGroup;
 			children = (
+				493B875D1FBCDEC900437EDC /* Pogoda */,
+				493B87581FBCD74F00437EDC /* MyCityes */,
+				493B874D1FBCC78300437EDC /* AllCityes */,
 				499777981FB3550600621565 /* AppDelegate.swift */,
 				499777AA1FB3621900621565 /* LoginFormController.swift */,
 				4997779C1FB3550600621565 /* Main.storyboard */,
@@ -136,7 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493B87571FBCD16700437EDC /* AllCityesCell.swift in Sources */,
+				493B87551FBCD12E00437EDC /* AllCityesController.swift in Sources */,
+				493B875A1FBCD7A000437EDC /* MyCityesController.swift in Sources */,
 				499777991FB3550600621565 /* AppDelegate.swift in Sources */,
+				493B875F1FBCDF0200437EDC /* PogodaViewController.swift in Sources */,
+				493B87611FBCDF2300437EDC /* PogodaCell.swift in Sources */,
+				493B875C1FBCD7C800437EDC /* MyCityesCell.swift in Sources */,
 				499777AB1FB3621900621565 /* LoginFormController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
